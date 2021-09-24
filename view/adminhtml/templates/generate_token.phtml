@@ -1,0 +1,25 @@
+<?php
+/**
+ *
+ * @package     nexpwa/login-as-customer
+ * @author      Jayanka Ghosh <Codilar Technologies>
+ * @license     https://opensource.org/licenses/OSL-3.0 Open Software License v>
+ * @link        http://www.codilar.com/
+ */
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<html>
+    <head>
+        <script type="text/javascript">
+            localStorage.setItem("auth_token", JSON.stringify({
+                data: "<?= $block->getData('token') ?>"
+            }));
+            setTimeout(function() {
+                window.location.href = "<?= $block->getData('redirect_url') ?>";
+            }, 1000);
+        </script>
+    </head>
+    <body>
+        <h2>Logging you in...</h2>
+    </body>
+</html>

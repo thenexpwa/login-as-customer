@@ -1,0 +1,11 @@
+#/**
+# *
+# * @package     nexpwa/login-as-customer
+# * @author      Jayanka Ghosh <Codilar Technologies>
+# * @license     https://opensource.org/licenses/OSL-3.0 Open Software License v>
+# * @link        http://www.codilar.com/
+# */
+
+input CustomerInput {
+    allow_remote_shopping_assistance: Boolean @doc(description: "Indicates whether the customer has enabled remote shopping assistance")
+}

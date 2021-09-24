@@ -1,0 +1,23 @@
+{
+    "name": "nexpwa/login-as-customer",
+    "description": "Module Login as customer for NexPWA & ScandiPWA",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "email": "joy@codilar.com",
+            "name": "Jayanka Ghosh"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "NexPWA\\LoginAsCustomer\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
